@@ -3,14 +3,17 @@
 }
 
 body {
+  background-image: url("https://img.magnific.com/foto-gratis/fondo-negro-abstracto-cuadricula-digital_53876-97647.jpg?semt=ais_hybrid&w=740&q=80");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #214b35;
   min-height: 100vh;
   margin: 0;
   display: grid;
   place-items: center;
   padding: 24px;
-  background:
-    radial-gradient(ellipse at 12% 10%, rgb(193 224 198 / 45%), transparent 34rem),
-    #f4f7f1;
   color: #263b31;
   font-family: "Segoe UI", Arial, sans-serif;
 }
