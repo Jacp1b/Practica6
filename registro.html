@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de aprendiz SENA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="registro">
+    <h1>Registro de aprendiz</h1>
+    <p class="descripcion">Completa tus datos para realizar tu registro en el SENA.</p>
+
+    <form action="registrar.php" method="post">
+      <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+      </div>
+
+      <div class="campo">
+        <label for="documento">Documento de identidad</label>
+        <input type="text" id="documento" name="documento" autocomplete="off" required>
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo electronico</label>
+        <input type="email" id="correo" name="correo" autocomplete="email" required>
+      </div>
+
+      <div class="campo">
+        <label for="programa">Programa de formacion</label>
+        <select id="programa" name="programa" required>
+          <option value="" selected disabled>Selecciona un programa</option>
+          <option value="Analisis y Desarrollo de Software">Analisis y Desarrollo de Software</option>
+          <option value="Gestion Administrativa">Gestion Administrativa</option>
+          <option value="Contabilizacion de Operaciones Comerciales y Financieras">Contabilizacion de Operaciones Comerciales y Financieras</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="jornada">Jornada</label>
+        <select id="jornada" name="jornada" required>
+          <option value="" selected disabled>Selecciona una jornada</option>
+          <option value="Mañana">Mañana</option>
+          <option value="Tarde">Tarde</option>
+          <option value="Noche">Noche</option>
+        </select>
+      </div>
+
+      <button type="submit">Registrar aprendiz</button>
+    </form>
+  </main>
+</body>
+</html>
+
